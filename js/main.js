@@ -631,7 +631,7 @@
                 this.time = now;
                 if (this.activated) {
 
-                    this.choseDinoMove(); //Where we make the decision to jump or not
+                    this.chooseDinoMove(); //Where we make the decision to jump or not
                     this.clearCanvas();
                     if (this.tRex.jumping) {
                         this.tRex.updateJump(deltaTime, this.config);
@@ -698,7 +698,7 @@
                     this.raq();
                 }
             },
-            choseDinoMove: function() {
+            chooseDinoMove: function() {
 
                 //Pick an Action at Random
                 var random_action = this.learner.actions[Math.floor(Math.random()*this.learner.actions.length)];
